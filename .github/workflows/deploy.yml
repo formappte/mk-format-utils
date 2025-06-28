@@ -19,6 +19,8 @@ jobs:
     steps:
       - name: Checkout the source code
         uses: actions/checkout@v4
+        with:
+          token: ${{ github.github-pages }}
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
